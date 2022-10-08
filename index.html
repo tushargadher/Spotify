@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <div class="nav">
+
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"><span>Spotify</span></li>
+            <li id="home">Home</li>
+            <li id="about">About</li>
+        </ul>
+
+    </div>
+    <div class="container">
+
+        <div class="songList">
+            <h2>Best Popular Songs</h2>
+            <div class="wrap-songItem">
+                <div class="songItem" id="songItem1">
+                    <img src="cover1.jpg" alt="song1">
+                    <span class="long">Pehla Pyar - kabir singh</span>
+                    <span class="timestamp"><span>4:32</span> <i id="1"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songItem" id="songItem2">
+                    <img src="cover2.jpg" alt="song2">
+                    <span>Mere humsafar</span>
+                    <span class="timestamp"><span>5:52</span> <i id="2"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songItem" id="songItem3">
+                    <img src="cover3.jpg" alt="song3">
+                    <span>Baate Ye Kabhi Na </span>
+                    <span class="timestamp"><span>4:16</span> <i id="3"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songItem" id="songItem4">
+                    <img src="cover4.jpg" alt="song4">
+                    <span>kesariya</span>
+                    <span class="timestamp"><span>4:28</span> <i id="4"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songItem" id="songItem5">
+                    <img src="cover5.jpg" alt="song5">
+                    <span class="long">Tujhe Kitna Chahne Lage</span>
+                    <span class="timestamp"><span>4:23</span> <i id="5"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songItem" id="songItem6">
+                    <img src="cover6.jpg" alt="song6">
+                    <span>Meharbani</span>
+                    <span class="timestamp"><span>4:14</span> <i id="6"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songItem" id="songItem7">
+                    <img src="cover7.jpg" alt="song7">
+                    <span class="long">Phir Bhi Tumko Chaahunga</span>
+                    <span class="timestamp"><span>6:01</span> <i id="7"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songItem" id="songItem8">
+                    <img src="cover8.jpg" alt="song8">
+                    <span>Hamdard - Ek Villain</span>
+                    <span class="timestamp"><span>4:18</span> <i id="8"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songItem" id="songItem9">
+                    <img src="cover9.jpg" alt="song9">
+                    <span>Tu Jaane Na</span>
+                    <span class="timestamp"><span>5:36</span> <i id="9"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songItem" id="songItem10">
+                    <img src="cover10.jpg" alt="song10">
+                    <span>Tera Hone Laga</span>
+                    <span class="timestamp"><span>4:54</span> <i id="10"
+                            class="fa-regular songItemplay fa-2x fa-circle-play"></i></span>
+                </div>
+                <div class="songBanner">
+                    <img src="cover1.jpg" alt="" width="40px" id="songBannerImg">
+                    <img src="playing.gif" alt="Music playing animation" width="44px" id="gif">
+                    <div class="songInfo">
+                        <span id="currSong">Please choose a song to play</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="bottom glass">
+        <input type="range" name="range" id="SongProgressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <span id="start-point"></span>
+            <i class="fa-solid fa-2x fa-backward" id="backward"></i>
+            <i class="fa-solid fa-2x fa-play" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-forward" id="forward"></i>
+            <span id="end-point"></span>
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/e850630278.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
