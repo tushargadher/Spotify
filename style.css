@@ -94,7 +94,8 @@ body {
     border-radius: 10px;
     height: 300px;
     width: 400px;
-    margin-top: 10vh;
+    margin-top: 20vh;
+    margin-left: -590px;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -262,6 +263,7 @@ body {
     .songBanner {
         /* thied chanege */
         margin-top: -58px;
+        margin-left:0px;
         padding: 0px 0px 100px 0px;
         width: 90vw;
         height: 120px;
