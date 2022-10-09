@@ -3,7 +3,7 @@
 
 body {
     background-color: antiquewhite;
-    background-image: url('bg.jpg');
+    background-image: url('bg3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -67,6 +67,7 @@ body {
 /* container */
 .container {
     display: flex;
+    /* four changes */
     flex-direction: row;
     min-height: 70vh;
     /* width: 100%; */
@@ -183,10 +184,11 @@ body {
 #SongProgressBar {
     width: 80vw;
     cursor: pointer;
-    color:#1DB954;
+    color: #1DB954;
 
 }
-#SongProgressBar::-webkit-slider-thumb{
+
+#SongProgressBar::-webkit-slider-thumb {
     background: red;
 }
 
@@ -205,11 +207,12 @@ body {
     font-size: 1.2rem;
     font-family: 'Varela Round', sans-serif;
 }
-.glass{
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
-    backdrop-filter: blur(5px); 
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
-    border:1px solid rgba(255, 255, 255, 0.18); 
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
@@ -229,7 +232,9 @@ body {
         background-color: #252525;
         font-family: 'Varela Round', sans-serif;
     }
-
+    .container{
+        flex-direction: column;
+    }
     .wrap-songItem {
         flex-direction: row;
         width: 100%;
@@ -255,7 +260,9 @@ body {
     }
 
     .songBanner {
-        margin-top: 2px;
+        /* thied chanege */
+        margin-top: -58px;
+        padding: 0px 0px 100px 0px;
         width: 90vw;
         height: 120px;
         display: flex;
@@ -269,7 +276,8 @@ body {
     #currSong {
         font-size: 1.10rem;
     }
-    .long{
+
+    .long {
 
         font-size: 0.75rem;
     }
