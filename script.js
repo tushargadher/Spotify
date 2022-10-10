@@ -74,6 +74,26 @@ masterplay.addEventListener("click", () => {
 audioElemennt.addEventListener("timeupdate", () => {
     progress = parseInt((audioElemennt.currentTime / audioElemennt.duration) * 100);
     SongProgressBar.value = progress;
+    if(audioElemennt.currentTime==audioElemennt.duration){
+        if (songIndex >= 10) {
+            songIndex = 1;
+        }
+        else {
+    
+            songIndex += 1;
+        }
+        audioElemennt.src = `${songIndex}.mp3`;
+        audioElemennt.currentTime = 0;
+        audioElemennt.play();
+        currSong.innerText = songs[songIndex - 1].songname;
+        songBannerImg.src = `cover${songIndex}.jpg`;
+        masterplay.classList.remove('fa-play');
+        masterplay.classList.add('fa-pause');
+        makeallPlay();
+        var check = document.getElementById('songItem${songIndex}');
+        console.log(check);
+        gif.style.opacity = 1;
+    }
 
 })
 SongProgressBar.addEventListener("change", () => {
